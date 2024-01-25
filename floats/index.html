@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .cardi {
+      background-color: aquamarine;
+      margin-bottom: 10px;
+    }
+
+    #left-column {
+      width: 100%;
+      float: none;
+    }
+
+    #right-column {
+      width: 100%;
+      float: none;
+    }
+
+    #right-column>.cardi {
+      background-color: tomato;
+    }
+
+    @media (min-width: 800px) {
+      #left-column {
+        width: 70%;
+        float: left;
+      }
+
+      #right-column {
+        width: 30%;
+        float: right;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <div id="left-column">
+      <div class="cardi">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, cum. Ut itaque molestias
+        voluptates saepe assumenda at repellat provident dolorem!</div>
+      <div class="cardi">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio, iure ratione dolorem temporibus
+        provident hic nobis iusto nemo quidem repudiandae!</div>
+    </div>
+    <div id="right-column">
+      <div class="cardi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi blanditiis nemo eum, voluptate
+        rem eligendi assumenda quidem nisi ipsa dolorum.</div>
+    </div>
+  </main>
+</body>
+
+</html>
